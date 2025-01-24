@@ -119,6 +119,13 @@ const Navbar = () => {
           className="px-8 py-[9px] border-black border rounded-xl font-oswald font-bold text-base"
           whileHover={{scale: 1.2}}
           whileTap={{scale: 0.8}}
+          initial={{opacity:0, scale: 0, filter: 'blur(10px)'}}
+          animate={{opacity:1, scale:1, filter: 'blur(0px)'}}
+          transition={{
+            delay: 1,
+            duration: 0.5,
+            scale: {type: 'spring', visualDuration: 1, easeOut}
+          }}
         >
           Booking
         </motion.button>
