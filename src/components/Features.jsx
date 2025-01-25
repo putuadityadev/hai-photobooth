@@ -24,13 +24,51 @@ const Features = () => {
     }
   ];
 
-  return (
-    <section className="h-fit bg-black text-white flex flex-col items-center py-20 md:py-28" id="features">
-      <h1 className="font-ubuntu font-bold text-4xl md:text-5xl text-center text-balance mb-10 md:mb-16">
-        Fitur Unggulan Hai Photobooth
-      </h1>
+  const containerCardVariants = {
+    hidden : {
+      opacity: 0
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.4,
+        staggerChildren: 0.3
+      }
+    }
+  }
 
-      <div className="flex flex-col w-full justify-center items-center gap-8 md:gap-12 md:flex-row">
+  return (
+
+    <section className="h-fit bg-black text-white flex flex-col items-center py-20 md:py-28" id="features">
+      <motion.h1
+        initial = {{
+          y: 100,
+          scale: 0.8,
+          opacity: 0,
+          backdropFilter: 'blur(10px)'
+        }}
+        whileInView={{
+          y: 0,
+          scale: 1,
+          opacity: 1,
+          backdropFilter: 'blur(0px)',
+          transition: {
+            duration: 0.5,
+            ease: easeOut
+          }
+        }}
+
+        className="font-ubuntu font-bold text-4xl md:text-5xl text-center text-balance mb-10 md:mb-16"
+      >
+        Fitur Unggulan Hai Photobooth
+      </motion.h1>
+
+      <motion.div 
+        variants={containerCardVariants}
+        initial = 'hidden'
+        whileInView= 'visible'
+        className="flex flex-col w-full justify-center items-center gap-8 md:gap-12 md:flex-row"
+      >
         {cardItems.map((card) => (
           <Card
             key={card.id}
@@ -39,16 +77,15 @@ const Features = () => {
             image={card.image}
           />
         ))}
-      </div>
+      </motion.div>
 
       <motion.button 
           className="px-8 py-4 md:px-24 border-white border rounded-xl font-oswald font-bold text-base md:text-lg mt-10 md:mt-12"
           whileHover={{scale: 1.2}}
           whileTap={{scale: 0.8}}
-          initial={{opacity:0, scale: 0, filter: 'blur(10px)'}}
-          animate={{opacity:1, scale:1, filter: 'blur(0px)'}}
+          initial={{opacity:0, scale: 0}}
+          whileInView={{opacity:1, scale:1}}
           transition={{
-            delay: 1,
             duration: 0.5,
             scale: {type: 'spring', visualDuration: 1, easeOut}
           }}

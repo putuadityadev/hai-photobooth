@@ -1,4 +1,4 @@
-import { easeInOut } from 'motion';
+import { easeInOut, easeOut } from 'motion';
 import { motion } from 'motion/react';
 
 import PropTypes from 'prop-types';
@@ -16,7 +16,25 @@ const Card = ({title, desc, image}) => {
     },
     initial: {
       scale: 1,
-    }
+    },
+    hidden: {
+      opacity: 0,
+      x : -100,
+      filter: 'blur(10px)',
+      transition: {
+        duration: 1,
+        ease: easeOut
+      }
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      filter: 'blur(0px)',
+      transition: {
+        duration: 1,
+        ease: easeOut
+      }
+    },
   }
 
   const [isHovered, setIsHovered] = useState(false);
@@ -32,6 +50,11 @@ const Card = ({title, desc, image}) => {
 
   return (
     <motion.div 
+      initial= 'hidden'
+      viewport={{
+        margin: '-100px'
+      }}
+      whileInView= 'visible'
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       variants={variants}
