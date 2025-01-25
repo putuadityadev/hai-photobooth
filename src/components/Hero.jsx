@@ -10,7 +10,7 @@ const Hero = () => {
   const isInView = useInView(ref, { once : true});
 
   return (
-    <section className="pt-32 w-full h-screen px-8 2xl:pt-44">
+    <section className="pt-32 w-full h-screen px-8 2xl:pt-44 relative pb-90 md:pb-[1150px] 2xl:pb-[1080px]">
       <div className="container flex flex-col z-10 md:flex-row md:w-full">
         <div className="flex flex-col gap-12 md:w-1/2">
           <div className="flex flex-col gap-2">
@@ -65,8 +65,8 @@ const Hero = () => {
         >
           <img 
             src="src/images/hero.png"
-            alt="hero-image"
-            className="pointer-events-none absolute left-0 right-0"
+            alt="hero-image" 
+            className="pointer-events-none absolute left-0 right-0 bottom-0 lg:bottom-auto"
           />
         </motion.div>
       </div>

@@ -11,8 +11,8 @@ export default function Drag() {
             ref={ref} 
             style={{ 
                 position: 'fixed', 
-                width: 80, 
-                height: 80, 
+                width: 40, 
+                height: 40, 
                 background: 'rgba(0,0,0,0.0)', 
                 borderRadius: "8px", 
                 border: '2px solid rgba(0,0,0,0.1)', 
@@ -30,8 +30,8 @@ export default function Drag() {
         >
             <div 
                 style={{
-                    width: 50,
-                    height: 50,
+                    width: 25,
+                    height: 25,
                     borderRadius: '50%',
                     background: 'rgba(0,0,0,0.05)',
                     border: '2px solid rgba(0,0,0,0.2)',
