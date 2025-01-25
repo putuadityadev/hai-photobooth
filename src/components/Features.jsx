@@ -38,8 +38,7 @@ const Features = () => {
   }
 
   return (
-
-    <section className="h-fit bg-black text-white flex flex-col items-center py-20 md:py-28" id="features">
+    <section className="h-fit bg-black text-white flex flex-col items-center py-20 md:py-28 md:mt-28" id="Fitur Unggulan">
       <motion.h1
         initial = {{
           y: 100,
@@ -80,7 +79,7 @@ const Features = () => {
       </motion.div>
 
       <motion.button 
-          className="px-8 py-4 md:px-24 border-white border rounded-xl font-oswald font-bold text-base md:text-lg mt-10 md:mt-12"
+          className="px-8 py-4 md:px-24 border-white border rounded-xl font-oswald font-bold text-base md:text-lg mt-10 md:mt-12 bg-black"
           whileHover={{scale: 1.2}}
           whileTap={{scale: 0.8}}
           initial={{opacity:0, scale: 0}}

@@ -61,16 +61,16 @@ const Card = ({title, desc, image}) => {
       animate={isHovered? "hover" : "initial"}
       className={`flex flex-col h-[333px] md:h-[453px] w-[264px] md:w-[338px] bg-[#1A1A1A] px-6 pt-32 md:pt-52 rounded-xl border ${isHovered? 'border-white' : ' border-[#999999]'}`}>
       <motion.div
-        className="flex flex-col justify-start w-fit flex-wrap gap-4"
+        className="flex flex-col justify-start w-fit flex-wrap gap-4 bg-[#1A1A1A]"
        >
-        <div>
+        <div className='bg-[#1A1A1A]'>
           <img
             className={`${isHovered ? 'opacity-100' : 'opacity-50'} md:w-20`} 
             src={image}
             alt={title}
           />
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 bg-[#1A1A1A]">
           <h1 className={`font-oswald font-bold text-lg md:text-2xl ${ isHovered ? 'text-white' : ' text-[#999999]'} transition-all duration-300 ease-in-out`}>{title}</h1>
           <p className={`font-oswald text-xs md:text-base text-white ${isHovered ? 'opacity-100' : 'opacity-50'} transition-all duration-300 ease-in-out `}>{desc}</p>
         </div>
