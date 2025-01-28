@@ -1,29 +1,10 @@
 import Card from "../ui/Card"
 import { motion } from "motion/react";
 import { easeOut } from "motion";
+import { cardItems } from "../../data/maindata";
 
 const Features = () => {
-  const cardItems = [
-    {
-      id: 1,
-      title: "Kostumisasi Tema Sesuai Acara Kamu",
-      desc: "Kami menawarkan berbagai tema yang dapat disesuaikan.",
-      image: "src/images/Confetti.png"
-    },
-    {
-      id: 2,
-      title: "Kualitas Foto Tinggi dan Instan",
-      desc: "Nikmati hasil foto berkualitas tinggi dalam sekejap.",
-      image: "src/images/Photo Gallery.png"
-    },
-    {
-      id: 3,
-      title: "Aksesoris Seru untuk Setiap Momen",
-      desc: "Pilih dari berbagai aksesori menarik untuk foto Anda.",
-      image: "src/images/Sun Glasses.png"
-    }
-  ];
-
+  
   const containerCardVariants = {
     hidden : {
       opacity: 0

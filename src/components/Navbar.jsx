@@ -80,7 +80,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex flex-col fixed w-full bg-white z-10 px-8 2xl:max-w-[1200px]">
+    <nav className="flex flex-col fixed w-full bg-white z-10 px-8 2xl:max-w-[1400px]">
       <div className="flex justify-between pt-6 items-center min-w-full">
         <div className="flex gap-3">
           <div className="md:hidden" onClick={handleMenuToggle}>

@@ -14,14 +14,11 @@ export default function Drag() {
             if (element) {
                 const computedStyle = window.getComputedStyle(element)
                 const backgroundColor = computedStyle.backgroundColor
-    
-                // Cek apakah background transparan
+
                 const isTransparent = backgroundColor === 'rgba(0, 0, 0, 0)' || 
                                        backgroundColor === 'transparent'
     
-                // Jika transparan, gunakan warna putih
                 if (isTransparent) {
-                    console.log('Transparent background detected, using white')
                     setBorderColor('rgba(0,0,0,0.2)')
                 } else {
                     const rgbValues = backgroundColor.match(/\d+/g)
@@ -30,8 +27,6 @@ export default function Drag() {
                         const [r, g, b] = rgbValues.map(Number)
                         const brightness = (r * 299 + g * 587 + b * 114) / 1000
                         
-                        console.log('Detected Background:', backgroundColor)
-                        console.log('Brightness:', brightness)
                         
                         setBorderColor(brightness < 128 ? 'rgba(255,255,255,0.5)' : 'rgba(0,0,0,0.2)')
                     }
