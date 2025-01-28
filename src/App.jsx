@@ -3,6 +3,7 @@ import GalleryPhoto from "./components/GalleryPhoto"
 import Hero from "./components/Hero"
 import Drag from "./components/MouseAnimation"
 import Navbar from "./components/Navbar"
+import Testimonial from "./components/Testimonial"
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Hero />
         <Features />
         <GalleryPhoto />
+        <Testimonial />
       </main>
     </div>
   )

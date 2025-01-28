@@ -20,7 +20,7 @@ const GalleryPhoto = () => {
 
 
   return (
-    <section  className="relative h-screen md:h-screen text-black md:pt-12 mb-10 px-8" id="Gallery Photo">
+    <section  className="relative h-screen text-black md:pt-12 mb-10 px-8" id="Gallery Photo">
       <div className="mt-8 px-8 ">
         <div className="flex flex-col justify-start max-w-[313px] md:max-w-fit gap-2">
           <h1 className="text-white font-ubuntu text-4xl font-bold md:text-5xl">Gallery Photo</h1>
@@ -39,7 +39,7 @@ const GalleryPhoto = () => {
               />
             ))}
 
-            <div className=" h-fit absolute -right-10 -z-10 -top-20 md:hidden">
+            <div className=" h-fit absolute -right-20 -z-10 -top-20 md:hidden">
               <img src="src/images/elipse.png"alt="circle" className=""/>
             </div>
           </div>
@@ -57,7 +57,7 @@ const GalleryPhoto = () => {
         <img
           src="src/images/bg-large.png"
           alt="background"
-          className="h-[100dvh] md:w-screen md:h-[150vh]"
+          className="h-[100dvh] md:w-screen  2xl:h-full"
         />
       </div>
     </section>

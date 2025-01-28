@@ -36,3 +36,27 @@ export const cardItems = [
     image: "src/images/Sun Glasses.png"
   }
 ];
+
+export const testiData = [
+  {
+    name: 'Dewi Sintya',
+    title: 'Event Organizer, Bali',
+    testimonial: 'Foto-foto yang diberikan sangat bagus, dan berkualitas tinggi',
+    stars: 'src/images/stars.png',
+    photo: 'src/images/profile-1.jpg'
+  },
+  {
+    name: 'Moe',
+    title: 'Pengantin, Bali',
+    testimonial: 'Kualitas pelayanan sangat baik, dan bisa disesuaikan dengan tema acara saya',
+    stars: 'src/images/stars.png',
+    photo: 'src/images/profile-3.jpg'
+  },
+  {
+    name: 'Kadek Agung',
+    title: 'Manajer, Perusahan ABC',
+    testimonial: 'Keren, photobooth yang bisa disesuakan dan fleksibel sangatlah bagus bagi saya',
+    stars: 'src/images/stars.png',
+    photo: 'src/images/profile-2.jpg'
+  }
+]
