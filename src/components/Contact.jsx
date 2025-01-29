@@ -15,19 +15,19 @@ const Contact = () => {
             title = "Email"
             desc = "Silakan kirim email untuk pertanyaan dan pemesanan."
             info = "info@haiphotoboothbali.com"
-            image = "src/images/email.png"
+            image = "public/images/email.png"
           />
           <ContactCard
             title = "Telepon"
             desc = "Hubungi no kami untuk informasi lebih lanjut."
             info = "+62 812 3456 7890"
-            image = "src/images/phone.png"
+            image = "public/images/phone.png"
           />
           <ContactCard
             title = "Lokasi"
             desc = "Datang langsung ke lokasi kantor kami, untuk diskusi lebih detail."
             info = "Jalan Nusantara, Kayubihi, Bangli"
-            image = "src/images/map.png"
+            image = "public/images/map.png"
           />
          </div>
       </div>

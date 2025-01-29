@@ -63,7 +63,7 @@ const Hero = () => {
           }}
         >
           <img 
-            src="./src/images/hero.png"
+            src="public/images/hero.png"
             alt="hero-image" 
             className="pointer-events-none absolute left-0 right-0 bottom-0 lg:bottom-auto"
           />

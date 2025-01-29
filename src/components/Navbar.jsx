@@ -88,7 +88,7 @@ const Navbar = () => {
           <div className="md:hidden" onClick={handleMenuToggle}>
             <img 
               className="h-10"
-              src="/src/images/Menu.png"
+              src="public/images/Menu.png"
               alt="menu"
             />
           </div>
@@ -112,7 +112,7 @@ const Navbar = () => {
               }
             }}
             className="h-10 md:h-14"
-            src="/src/images/logo.png"
+            src="public/images/logo.png"
             alt="logo"
           /> 
         </div>
@@ -164,7 +164,7 @@ const Navbar = () => {
       <hr className="h-px mt-6 bg-gray-200 border-0 dark:bg-gray-700 md:hidden" />
       <div className={`bg-black h-full w-full fixed top-0 left-0 z-[999] ${menuButton ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'} transition-all duration-500 ease-in-out`}>
         <ul className="text-white flex flex-col gap-10 font-ubuntu text-4xl ml-8 mt-5">
-          <img src="/src/images/Close Window.png" alt="close" width={80} onClick={handleMenuToggle} />
+          <img src="public/images/Close Window.png" alt="close" width={80} onClick={handleMenuToggle} />
           {menuItems.map((item, i) => (
             <li key={i} className="text-secondary-0">{item}</li>
           ))}
