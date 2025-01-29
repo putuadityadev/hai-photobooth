@@ -25,7 +25,7 @@ const OrderCard = ({title, desc}) => {
 
       <div >
         <img 
-          src="public/images/arrow.png"
+          src="images/arrow.png"
           alt="arrow-img"
           className={`${title === "Selesai" ? 'hidden' : ''}`}
         />

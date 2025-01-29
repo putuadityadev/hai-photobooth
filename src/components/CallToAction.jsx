@@ -31,7 +31,7 @@ const CallToAction = () => {
         <div>
           <img 
           className="absolute inset-0 h-full w-full opacity-15 object-cover pointer-events-none"
-          src="public/images/imagecta.png" alt="bg-cta" />
+          src="images/imagecta.png" alt="bg-cta" />
         </div>
       </div>
     </section>

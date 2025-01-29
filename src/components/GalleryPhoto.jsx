@@ -40,7 +40,7 @@ const GalleryPhoto = () => {
             ))}
 
             <div className=" h-fit absolute -right-20 -z-10 -top-20 md:hidden">
-              <img src="public/images/elipse.png"alt="circle" className=""/>
+              <img src="images/elipse.png"alt="circle" className=""/>
             </div>
           </div>
 
@@ -55,7 +55,7 @@ const GalleryPhoto = () => {
 
       <div className="absolute top-0 bottom-0 left-0 right-0 -z-20 ">
         <img
-          src="public/images/bg-large.png"
+          src="images/bg-large.png"
           alt="background"
           className="h-[100dvh] md:w-screen  2xl:h-full"
         />
