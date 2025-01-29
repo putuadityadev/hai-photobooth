@@ -21,7 +21,7 @@ const Footer = () => {
       <div className="flex flex-col gap-12 max-w-[1400px] mx-auto">
         <div className="flex flex-col md:flex-row md:gap-36">
           <div className="flex flex-col justify-center items-start gap-4">
-            <img src="src/images/logo-white.png" alt="" />
+            <img src="images/logo-white.png" alt="" />
             <p className="text-white font-ubuntu text-sm">Daftar newsletter kami untuk mendapatkan informasi terbaru tentang fitur dan rilis.</p>
 
             <div className="flex flex-col gap-2 md:gap-4">

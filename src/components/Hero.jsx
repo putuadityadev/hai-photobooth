@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="container flex flex-col z-10 md:flex-row md:w-full">
         <div className="flex flex-col gap-12 md:w-1/2">
           <div className="flex flex-col gap-2">
-            <h1 ref={ref} className="font-ubuntu font-extrabold text-[32px] leading-[120%] whitespace-nowrap sm:text-6xl  sm:text-nowrap md:text-6xl md:leading-[120%]">
+            <h1 ref={ref} className="font-ubuntu font-extrabold text-[32px] leading-[120%] whitespace-nowrap sm:text-6xl  sm:text-nowrap md:text-6xl md:leading-[120%] text-balance">
               {text1.split('').map((letter, i) => (
                 i === 14 || i === 35 ? <br key={`br-${i}`} /> :
                 <motion.span
