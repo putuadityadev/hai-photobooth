@@ -20,8 +20,8 @@ const GalleryPhoto = () => {
 
 
   return (
-    <section  className="relative h-screen text-black md:pt-12 mb-10 px-8" id="Gallery Photo">
-      <div className="mt-8 px-8 ">
+    <section  className="relative h-screen text-black md:pt-12 mb-10 px-8 " id="Gallery Photo">
+      <div className="mt-8 px-8 max-w-[1400px] mx-auto">
         <div className="flex flex-col justify-start max-w-[313px] md:max-w-fit gap-2">
           <h1 className="text-white font-ubuntu text-4xl font-bold md:text-5xl">Gallery Photo</h1>
           <p className="font-oswald text-white text-xs opacity-50 text-balance">Lihat koleksi momen berharga di photobooth kami.</p>

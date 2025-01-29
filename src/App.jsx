@@ -1,5 +1,7 @@
 import CallToAction from "./components/CallToAction"
+import Contact from "./components/Contact"
 import Features from "./components/Features"
+import Footer from "./components/Footer"
 import GalleryPhoto from "./components/GalleryPhoto"
 import Hero from "./components/Hero"
 import Drag from "./components/MouseAnimation"
@@ -9,9 +11,9 @@ import Testimonial from "./components/Testimonial"
 
 const App = () => {
   return (
-    <div className="relative 2xl:max-w-[1400px] 2xl:mx-auto overflow-hidden">
+    <div className=" overflow-hidden">
       <Navbar />
-      <main className="max-w-full overflow-hidden flex flex-col  justify-center">
+      <main className=" overflow-hidden flex flex-col  justify-center">
         <Drag />
         <Hero />
         <Features />
@@ -19,6 +21,8 @@ const App = () => {
         <Testimonial />
         <Order />
         <CallToAction />
+        <Contact />
+        <Footer />
       </main>
     </div>
   )

@@ -3,7 +3,7 @@ import OrderCard from "../ui/OrderCard"
 
 const Order = () => {
   return (
-    <section className="h-fit w-full px-8" id="order">
+    <section className="h-fit w-full px-8 max-w-[1400px] mx-auto" id="order">
       <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:items-start">
 
         <div className="flex flex-col md:w-1/2 w-full items-center md:items-start">

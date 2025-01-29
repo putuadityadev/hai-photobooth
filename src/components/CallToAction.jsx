@@ -3,7 +3,7 @@ import { easeOut } from "motion"
 
 const CallToAction = () => {
   return (
-    <section className="h-fit w-full px-8 my-20" id="booking">
+    <section className="h-fit w-full px-8 my-20 max-w-[1400px] mx-auto" id="booking">
       <div className="relative bg-black h-[60vh] md:max-h-80 p-8 md:p-12 rounded-xl overflow-hidden">
         <div className="flex flex-col gap-12 z-10">
           <div className="flex flex-col justify-start gap-4">

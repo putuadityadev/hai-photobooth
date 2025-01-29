@@ -59,4 +59,27 @@ export const testiData = [
     stars: 'src/images/stars.png',
     photo: 'src/images/profile-2.jpg'
   }
+];
+
+export const linksSocialMedia = [
+  {
+    name : 'Facebook',
+    image : 'src/images/Facebook.png'
+  },
+  {
+    name : 'Instagram',
+    image : 'src/images/Instagram.png'
+  },
+  {
+    name : 'X',
+    image : 'src/images/X.png'
+  },
+  {
+    name : 'LinkedIn',
+    image : 'src/images/LinkedIn.png'
+  },
+  {
+    name : 'YouTube',
+    image : 'src/images/Youtube.png'
+  }
 ]
