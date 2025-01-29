@@ -9,7 +9,9 @@ const Navbar = () => {
   const menuItems = [
     "Beranda",
     "Fitur Unggulan",
-    "Layanan",
+    "Gallery Photo",
+    "Testimoni",
+    "Cara Order",
     "Kontak"
   ];
 

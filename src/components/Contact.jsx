@@ -3,7 +3,7 @@ import ContactCard from "../ui/ContactCard"
 
 const Contact = () => {
   return (
-    <section className="h-fit w-full px-8 overflow-hidden max-w-[1400px] mx-auto" id="contact">
+    <section className="h-fit w-full px-8 overflow-hidden max-w-[1400px] mx-auto" id="Kontak">
       <div className="flex flex-col h-fit justify-center items-center ">
         <div className="text-center flex flex-col gap-2 mb-10">
           <h1 className="font-ubuntu font-bold text-4xl md:text-5xl">Kontak Kami</h1>
