@@ -1,8 +1,26 @@
-
+import { easeInOut } from "motion"
+import { motion } from "motion/react"
 
 const TestiCard = ({name, title, testimonial, stars, photo}) => {
   return (
-    <div className="flex gap-4 justify-center items-center">
+    <motion.div
+    initial = {{
+      opacity: 0,
+      x: -50,
+      scale: 0.8
+    }}
+    whileInView={{
+      opacity: 1,
+      x: 0,
+      scale: 1
+    }}
+    transition={{
+      delay: 1,
+      duration: 0.8,
+      ease: easeInOut
+    }}
+
+    className="flex gap-4 justify-center items-center">
       <div className="w-[30%]">
         <div className="w-full h-20 rounded-full overflow-hidden md:h-[100px] 2xl:h-[120px]">
           <img src={photo} alt="profile-photo" className="w-full h-full object-cover"/>
@@ -24,7 +42,7 @@ const TestiCard = ({name, title, testimonial, stars, photo}) => {
             </div>
           </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
