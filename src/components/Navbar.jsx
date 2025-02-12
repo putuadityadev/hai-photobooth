@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { easeOut } from "motion";
+import BookingForm from "./BookingForm";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("Beranda");
   const [menuButton, setMenuButton] = useState(false);
+  const [isFormOpen, setIsFormOpen] = useState(false);
 
   const menuItems = [
     "Beranda",
@@ -146,7 +148,8 @@ const Navbar = () => {
           ))}
           </motion.ul>
         </div>
-        <motion.button 
+        <motion.button
+          onClick={() => setIsFormOpen(true)}
           className="px-8 py-[9px] border-black border rounded-xl font-oswald font-bold text-base"
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.8 }}
@@ -170,6 +173,7 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
+      {isFormOpen && <BookingForm onClose={() => setIsFormOpen(false)} />}
     </nav>
   );
 }

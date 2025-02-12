@@ -21,7 +21,7 @@ const Testimonial = () => {
           duration: 0.5,
           ease: easeOut
         }}
-        className="font-ubuntu font-bold text-3xl md:text-5xl">Testimoni Pelanggan</motion.h1>
+        className="font-ubuntu font-bold text-3xl md:text-5xl md:mt-28">Testimoni Pelanggan</motion.h1>
         <motion.p 
         initial = {{
           opacity: 0,

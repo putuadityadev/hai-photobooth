@@ -8,7 +8,7 @@ const Order = () => {
 
         <div className="flex flex-col md:w-1/2 w-full items-center md:items-start">
           <h1 className="font-ubuntu font-bold text-3xl md:text-5xl">Cara Order</h1>
-          <img src="/src/images/arrow-order.png" alt="arrow-order" className="hidden md:block" />
+          <img src="images/arrow-order.png" alt="arrow-order" className="hidden md:block" />
         </div>
 
         <div className="flex flex-col w-full items-center md:w-1/2 md:gap-4 md:items-start md:ml-20">

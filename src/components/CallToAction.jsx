@@ -1,7 +1,11 @@
 import { motion } from "motion/react"
 import { easeOut } from "motion"
+import { useState } from "react"
+import BookingForm from "./BookingForm"
 
 const CallToAction = () => {
+  const [isFormOpen, setIsFormOpen] = useState(false)
+
   return (
     <section className="h-fit w-full px-8 my-20 max-w-[1400px] mx-auto" id="booking">
       <div className="relative bg-black h-[60vh] md:max-h-80 p-8 md:p-12 rounded-xl overflow-hidden">
@@ -23,6 +27,7 @@ const CallToAction = () => {
               duration: 0.5,
               scale: { type: 'spring', visualDuration: 1, easeOut }
             }}
+            onClick={() => setIsFormOpen(true)}
           >
             Booking
           </motion.button>
@@ -34,6 +39,8 @@ const CallToAction = () => {
           src="images/imagecta.png" alt="bg-cta" />
         </div>
       </div>
+
+      {isFormOpen && <BookingForm onClose={() => setIsFormOpen(false)} />}
     </section>
   )
 }
